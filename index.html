@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="gridResult">  
+        <table id="specialTable"> </table>
+        <button id="makeTable" onclick="buttonPress()"> Press this button!</button>
+
+    </div>
+        <script>
+
+            // var columns = 10, rows = 10;
+            
+            function createGrids(){
+                const container = document.querySelector('#gridResult');
+
+                // const table = document.getElementById("specialTable");
+                var table2 = document.createElement("table");
+                var row = table2.insertRow(0);
+                var cell1 = row.insertCell(0);
+                var cell2 = row.insertCell(1);
+                cell1.innerHTML = "TOM CELL1";
+                cell2.innerHTML = "NEW CELL2";
+
+                container.appendChild(table2);
+
+                // var x = document.createElement("table");
+                // for (var i = 0; i <rows; i++){
+                //     var row = XXX;
+                //     ta
+                // }
+                
+            }
+
+            function buttonPress(){
+                createGrids();
+            }
+        
+
+
+        </script>
+
+    </body>
+</html>
